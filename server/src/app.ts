@@ -2,16 +2,14 @@ import express from "express";
 import cors from "cors";
 
 import sequelize from "./config/sequelize.config";
+import router from "./router";
 import models from "./models";
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
-
-app.get("/", (req, res) => {
-  res.status(200).json({ message: "works" });
-});
+app.use("/api", router);
 
 const PORT = process.env.PORT || 5000;
 
