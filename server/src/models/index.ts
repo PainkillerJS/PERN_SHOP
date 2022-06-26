@@ -8,14 +8,4 @@ import Rating from "./Rating";
 import TypeBrand from "./TypeBrand";
 import DeviceInfo from "./DeviceInfo";
 
-export default {
-  User,
-  Basket,
-  BasketDevice,
-  Device,
-  Type,
-  Brand,
-  Rating,
-  TypeBrand,
-  DeviceInfo
-};
+export { User, Basket, BasketDevice, Device, Type, Brand, Rating, TypeBrand, DeviceInfo };
