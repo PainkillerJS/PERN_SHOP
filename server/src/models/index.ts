@@ -8,4 +8,6 @@ import Rating from "./Rating";
 import TypeBrand from "./TypeBrand";
 import DeviceInfo from "./DeviceInfo";
 
+import "./connectsBetweenTable";
+
 export { User, Basket, BasketDevice, Device, Type, Brand, Rating, TypeBrand, DeviceInfo };
