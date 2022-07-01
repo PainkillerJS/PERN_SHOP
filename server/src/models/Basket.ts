@@ -2,7 +2,14 @@ import { DataTypes } from "sequelize";
 
 import sequelize from "../config/sequelize.config";
 
-const Basket = sequelize.define("basket", {
+import type { Model } from "sequelize";
+
+interface BasketModel {
+  id: number;
+  userId?: number;
+}
+
+const Basket = sequelize.define<Model<BasketModel>>("basket", {
   id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true }
 });
 
